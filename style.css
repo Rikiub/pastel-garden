@@ -73,11 +73,11 @@ section img {
 
 @media screen and (max-width: 768px) {
 	section {
-		width: 100%;
+		width: 90%;
 		flex-wrap: wrap;
 	}
 	.navbar {
-		width: 70%;
+		width: 80%;
 	}
 }
 
