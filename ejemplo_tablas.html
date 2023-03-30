@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Inicio</title>
+</head>
+<body>
+
+	<nav>
+		<a href="index.html">Inicio</a>
+
+		<div class="dropdown">
+			<a class="dropdown" href="zonas.html">Zonas</a>
+			<div class="dropdown-content">
+				<a href="#">Desarollo</a>
+				<a href="#">Tutoriales Basicos</a>
+				<a href="#">HTML Guías</a>
+				<a href="#">CSS Guías</a>
+			</div>
+		</div>
+
+		<a href="galeria.html">Galería</a>
+
+		<div class="dropdown">
+			<a class="dropdown" href="contactos.html">Contacto</a>
+			<div class="dropdown-content">
+				<a href="#">Facebook</a>
+				<a href="#">Instagram</a>
+				<a href="#">Twitter</a>
+				<a href="#">Github</a>
+			</div>
+		</div>
+	</nav>
+
+	<br>
+
+	<section>
+		<h1>Tabla</h1>
+
+		<table>
+			<tr>
+				<td><label for="nombre">Nombre:</label></td>
+				<td><input type="text" id="nombre" name="nombre" required></td>
+			</tr>
+			<tr>
+				<td><label for="apellido">Apellido:</label></td>
+				<td><input type="text" id="apellido" name="apellido" required></td>
+			</tr>
+			<tr>
+				<td><label for="fecha_nacimiento">Fecha de nacimiento:</label></td>
+				<td><input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required></td>
+			</tr>
+			<tr>
+				<td><label for="lugar_nacimiento">Lugar de nacimiento:</label></td>
+				<td><input type="text" id="lugar_nacimiento" name="lugar_nacimiento" required></td>
+			</tr>
+			<tr>
+				<td><label for="genero">Género:</label></td>
+				<td>
+					<input type="radio" id="genero_masculino" name="genero" value="masculino" required>
+					<label for="genero_masculino">Masculino</label>
+					<input type="radio" id="genero_femenino" name="genero" value="femenino">
+					<label for="genero_femenino">Femenino</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="estado_civil">Estado civil:</label></td>
+				<td>
+					<select id="estado_civil" name="estado_civil" required>
+						<option value="">--Seleccione--</option>
+						<option value="soltero">Soltero</option>
+						<option value="casado">Casado</option>
+						<option value="viudo">Viudo</option>
+						<option value="divorciado">Divorciado</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="numero_identificacion">Número de identificación:</label></td>
+				<td><input type="text" id="numero_identificacion" name="numero_identificacion" required></td>
+			</tr>
+			<tr>
+				<td><label for="correo_electronico">Correo electrónico:</label></td>
+				<td><input type="email" id="correo_electronico" name="correo_electronico"></td>
+			</tr>
+			<tr>
+				<td><label for="telefono">Teléfono:</label></td>
+				<td><input type="tel" id="telefono" name="telefono"></td>
+			</tr>
+			<tr>
+				<td><label for="dirección">Dirección:</label></td>
+				<td><input type="direc" id="dirección" name="dirección"></td>
+			</tr>
+		</table>
+
+		<br>
+
+		<button type="submit" style="float: right;" class="button">Enviar</button>
+
+		<br><br><br>
+		
+	</section>
+
+</body>
+</html>
