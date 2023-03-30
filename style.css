@@ -5,13 +5,12 @@
 
 	--border-style: 2px solid black;
 }
-
 body {
 	background-color: var(--background);
 }
 
 section {
-	background-color: var(--color-card);
+	background: var(--color-card);
 	border: var(--border-style);
 	border-radius: 20px;
 
@@ -22,20 +21,17 @@ section {
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
-
 section h1, h2 {
 	padding: 20px;
 	text-decoration-line: underline;
 	text-align: center;
 	font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 section p {
 	margin-right: 50px;
 	margin-left: 50px;
 	text-align: justify;
 }
-
 section img {
 	width: 100%;
 	height: auto;
@@ -46,45 +42,72 @@ section img {
 	margin: auto;
 }
 
-.navbar {
+nav  {
 	display: flex;
-	margin: 0 auto;
+	margin: auto;
 	width: 40%;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-evenly;
 
-	background-color: var(--color-card);
+	background: var(--color-card);
 	border: var(--border-style);
 	border-radius: 10px;
 	padding: 10px;
 }
-
-.navbar a {
-	display: block;
+nav  a {
+	display: flex;
 	text-decoration: none;
+	border-radius: 20px;
+	background: rgba(255, 128, 0, 0.1);
 	color: black;
 
 	font-size: 15px;
-	padding: 5px;
-
+	padding: 5px 20px;
 	transition: 0.4s;
 }
+nav a:hover {
+	background: rgba(255, 128, 0, 0.3);
+	border-radius: 20px;
+	padding: 5px 50px;
+}
 
-.navbar a:hover {
-	background-color: beige;
+.dropdown:hover .dropdown-content {
+	display: block;
+	position: absolute;
+}
+.dropdown-content a:hover .dropdown {
+	padding: 5px 50px;
+}
+.dropdown-content {
+	display: none;
+	width: 150px;
+	background-color: var(--color-card);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+.dropdown-content a {
+	padding: 5px 5px;
+}
+.dropdown-content a:hover {
+	padding: 5px 5px;
+	border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
+	nav {
+		width: 80%;
+	}
 	section {
 		width: 90%;
-		flex-wrap: wrap;
+	}
+	nav a {
+		padding: 5px;
+	}
+	nav a:hover {
+		padding: 0px 20px;
 	}
 	section p {
 		margin-right: 20px;
 		margin-left: 20px;
-	}
-	.navbar {
-		width: 80%;
 	}
 }
 
@@ -95,7 +118,6 @@ section img {
 	width: 50%;
 	margin-left: 1%;
 }
-
 .gallery-container img {
 	display: block;
 
@@ -104,7 +126,6 @@ section img {
 
 	object-fit: cover;
 }
-
 .gallery-container figure, figcaption {
 	display: block;
 	color: white;
