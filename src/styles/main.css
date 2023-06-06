@@ -1,0 +1,24 @@
+@import "components/layout.css"; /* section */
+@import "components/hero.css";
+@import "components/cards.css";
+
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+    /* remove default margin */
+    margin: 0px;
+}
+
+footer, footer a {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: small;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="table.css">
+    <link rel="icon" type="image/svg+xml" href="/src/img/icons/favicon.svg"/>
+	<title>Formulario + Tabla</title>
+</head>
+<body>
+
+	<section>
+		<h1>Tabla</h1>
+
+		<form>
+			<table>
+				<tr>
+					<td><label for="nombre">Nombre:</label></td>
+					<td><input type="text" id="nombre" name="nombre" required></td>
+				</tr>
+				<tr>
+					<td><label for="apellido">Apellido:</label></td>
+					<td><input type="text" id="apellido" name="apellido" required></td>
+				</tr>
+				<tr>
+					<td><label for="fecha_nacimiento">Fecha de nacimiento:</label></td>
+					<td><input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required></td>
+				</tr>
+				<tr>
+					<td><label for="lugar_nacimiento">Lugar de nacimiento:</label></td>
+					<td><input type="text" id="lugar_nacimiento" name="lugar_nacimiento" required></td>
+				</tr>
+				<tr>
+					<td><label for="genero">Género:</label></td>
+					<td>
+						<input type="radio" id="genero_masculino" name="genero" value="masculino" required>
+						<label for="genero_masculino">Masculino</label>
+						<input type="radio" id="genero_femenino" name="genero" value="femenino">
+						<label for="genero_femenino">Femenino</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="estado_civil">Estado civil:</label></td>
+					<td>
+						<select id="estado_civil" name="estado_civil" required>
+							<option value="">--Seleccione--</option>
+							<option value="soltero">Soltero</option>
+							<option value="casado">Casado</option>
+							<option value="viudo">Viudo</option>
+							<option value="divorciado">Divorciado</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="numero_identificacion">Número de identificación:</label></td>
+					<td><input type="text" id="numero_identificacion" name="numero_identificacion" required></td>
+				</tr>
+				<tr>
+					<td><label for="correo_electronico">Correo electrónico:</label></td>
+					<td><input type="email" id="correo_electronico" name="correo_electronico"></td>
+				</tr>
+				<tr>
+					<td><label for="telefono">Teléfono:</label></td>
+					<td><input type="tel" id="telefono" name="telefono"></td>
+				</tr>
+				<tr>
+					<td><label for="dirección">Dirección:</label></td>
+					<td><input type="direc" id="dirección" name="dirección"></td>
+				</tr>
+			</table>
+
+			<button type="submit" class="button">Enviar</button>
+		</form>
+	</section>
+
+</body>
+</html>

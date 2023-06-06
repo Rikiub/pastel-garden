@@ -1,0 +1,63 @@
+/* LIST-PROJECT */
+
+/* grid */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+    gap: 20px;
+}
+
+.project-card {
+    /* animation */
+    transition: transform .4s;
+
+    /* placeholder border */
+    border: 5px solid transparent;
+}
+
+.project-card:hover {
+    background-color: hsl(25, 90%, 90%);
+
+    /* border */
+    border-radius: inherit;
+    border: 5px solid black;
+
+    /* animation */
+    transform: scale(1.1);
+}
+
+.project-card img {
+    position: relative;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+    border-radius: 5px;
+}
+
+.project-card h1,
+.project-card h2,
+.project-card h3,
+.project-card h4,
+.project-card h5,
+.project-card h6 {
+    text-decoration: underline;
+    color: black;
+    margin-top: 10px;
+    font-size: larger;
+    text-align: center;
+}
+
+.project-card p {
+    margin: 20px 30px;
+    text-align: justify;
+
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        max-width: 80%;
+    }
+}

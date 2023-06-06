@@ -1,0 +1,10 @@
+section {
+    /* style */
+    background-color: hsl(25, 90%, 96%);
+    border-radius: 5px;
+    border: black solid 1px;
+
+    /* block */
+    width: 80%;
+    margin: auto;
+}

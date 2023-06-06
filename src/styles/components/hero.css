@@ -1,0 +1,79 @@
+.hero {
+    /* color and style */
+    background-color: black;
+    border-bottom: black solid 1px;
+    color: white;
+
+    /* height */
+    height: auto;
+    padding: 20px 0;
+
+    /* center elements
+    display: flex;
+    flex-direction: column;
+    */
+
+    /* space between elements */
+    margin-bottom: 50px;
+}
+
+.hero {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.hr-title {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    max-width: 80%;
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.hr-title p {
+    /* little indent */
+    margin-top: -10px;
+}
+
+.hr-user {
+    margin-left: 30px;
+    grid-area: 2;
+}
+
+.hr-social {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+    .hr-user {
+        margin-left: 300px;
+    }
+}
+
+
+
+.user-icon {
+    background-image: url("https://avatars.githubusercontent.com/u/114118274?v=4");
+
+    width: 100px;
+    border-radius: 100px;
+    border: white solid 5px;
+}
+
+.button-github {
+    text-decoration: none;
+    background-color: white;
+    padding: 5px;
+
+    border-radius: 5px;
+    border: solid gray 3px;
+    color: black;
+}
+
+.button-github:hover {
+    background-color: hsl(0, 0%, 86%);
+}

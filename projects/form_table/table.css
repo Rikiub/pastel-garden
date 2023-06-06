@@ -1,0 +1,40 @@
+/* form */
+table {
+	width: 100%;
+	border: var(--border-style);
+	border-radius: 10px;
+
+	background-color: rgba(255, 128, 0, 0.1);
+}
+
+tr td {
+	width: 55%;
+	padding: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0 20px auto;
+
+    background-color: black;
+    border: solid gray 3px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+
+    transition: .2s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+
+    animation: forwards;
+}
+
+button:active {
+    background-color: gray;
+
+    animation: forwards;
+}
