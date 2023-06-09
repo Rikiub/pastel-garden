@@ -14,7 +14,7 @@ section {
     border: var(--border-style);
     border-radius: 20px;
 
-    margin: 40px auto;
+    margin: 20px auto;
     width: 50%;
     padding: 10px 50px;
 }
@@ -26,22 +26,8 @@ section h1 {
     text-decoration-line: underline;
 }
 
-section img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border: var(--border-style);
-    border-radius: 20px;
-}
-
 @media screen and (max-width: 768px) {
     section {
         width: 75%;
-    }
-
-    section p {
-        margin-right: 20px;
-        margin-left: 20px;
     }
 }
