@@ -1,18 +1,20 @@
 {
-  "name": "pastel_garden",
-  "description": "My test zone",
+  "name": "rikiub.dev",
+  "description": "My personal portfolio",
+  "homepage": "https://rikiub.github.io",
   "version": "1.0.0",
   "main": "index.html",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+	"deploy": "npm run build && gh-pages -d dist"
   },
-  "keywords": [],
   "author": "Rikiub%",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "vite": "^4.3.9"
   }
 }
