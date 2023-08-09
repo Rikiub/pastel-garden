@@ -1,7 +1,7 @@
 /* LIST-PROJECT */
 
 /* grid */
-.project-list {
+#project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 20px;
