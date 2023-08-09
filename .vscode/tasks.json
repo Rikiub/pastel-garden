@@ -18,13 +18,6 @@
             "type": "shell",
             "command": "git add . && git commit -m 'update' && git push --force ; pnpm run deploy",
             "problemMatcher": []
-        },
-        {
-            "type": "npm",
-            "script": "deploy",
-            "problemMatcher": [],
-            "label": "npm: deploy",
-            "detail": "npm run build && gh-pages -d dist"
         }
     ]
 }
