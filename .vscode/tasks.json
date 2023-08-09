@@ -14,9 +14,9 @@
             }
         },
         {
-            "label": "Git Push",
+            "label": "Git Push and GH Deploy",
             "type": "shell",
-            "command": "git add . && git commit -m 'update' && git push --force",
+            "command": "git add . && git commit -m 'update' && git push --force ; pnpm run deploy",
             "problemMatcher": []
         },
         {
